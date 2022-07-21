@@ -1,0 +1,1 @@
+ bash extract_res101_dad.sh 1 /media/administrator/b11512ec-3b41-4ff9-8ab9-b048dc11432b/hongyanjin/shiyan/11 /media/administrator/b11512ec-3b41-4ff9-8ab9-b048dc11432b/hongyanjin/shiyan/11/res101_features
