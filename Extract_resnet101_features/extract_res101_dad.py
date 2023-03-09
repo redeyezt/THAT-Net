@@ -14,6 +14,7 @@ from torchvision import models, transforms
 from torch.autograd import Variable
 from PIL import Image
 
+#此代码属于USTRING中的一部分，作用是提取图像特征
 CLASSES = ('__background__', 'Car', 'Pedestrian', 'Cyclist')
 
 class ResNet(nn.Module):
