@@ -2,9 +2,7 @@
 import os, glob
 import numpy as np
 
-#School of Automation#China University of Geosciences
-#zhangtao
-#zhangt@cug.edu.cn
+
 
 
 
