@@ -5,9 +5,7 @@
 #The model used will be downloaded automatically, provided by PyTorch.
 
 #Part of the py file is called 'features_res101', but that's just a name. The author is lazy about making changes.
-#School of Automation#China University of Geosciences
-#zhangtao
-#zhangt@cug.edu.cn
+
 
 
 
