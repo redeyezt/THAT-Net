@@ -5,6 +5,7 @@ import codecs
 import linecache
 import os
 import csv
+#测试每一个生成的模型，注意这里“DSTA”只是一个名称，不代表任何含义
 
 file = open('test.csv', 'w+',newline="")
 writer = csv.writer(file)
