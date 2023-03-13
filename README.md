@@ -140,6 +140,7 @@ input1 = input1.contiguous()
 
 修改后的代码如下:
 
+
 class ChannelNormFunction(Function):
 
       @staticmethod
