@@ -14,8 +14,7 @@ DSA, <a href="https://link.springer.com/chapter/10.1007/978-3-319-54190-7_9">. C
 
 #UString
  
-UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Wentao, Qi Yu, and Yu Kong. "Uncertainty-based traffic accident anticipation with spatio-temporal relational learning." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
-
+UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Bao, Wentao, Qi Yu, and Yu Kong. "Uncertainty-based traffic accident anticipation with spatio-temporal relational learning." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
 #FA
  
 FA, <a href="https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mishal, Muhammad Umar Karim Khan, and Chong-Min Kyung. "Global feature aggregation for accident anticipation." 2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021.
