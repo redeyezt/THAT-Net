@@ -18,7 +18,7 @@ UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Wentao, 
 
 #FA
  
-FA, <a href=" https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mishal, Muhammad Umar Karim Khan, and Chong-Min Kyung. "Global feature aggregation for accident anticipation." 2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021.
+FA, <a href="https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mishal, Muhammad Umar Karim Khan, and Chong-Min Kyung. "Global feature aggregation for accident anticipation." 2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021.
 
 #DSTA
  
@@ -253,4 +253,4 @@ bash extract_vgg16_dad.sh
 
 (这一步需要更改文件路径)
 
-[![Page Views Count](https://badges.toozhao.com/badges/01GVFVQSQZN6D7TXVVZDC7Q1BT/blue.svg)](https://badges.toozhao.com/stats/01GVFVQSQZN6D7TXVVZDC7Q1BT "Get your own page views count badge on badges.toozhao.com")
+[![Page Views Count](https://badges.toozhao.com/badges/01GVFVQSQZN6D7TXVVZDC7Q1BT/black.svg)](https://badges.toozhao.com/stats/01GVFVQSQZN6D7TXVVZDC7Q1BT "Get your own page views count badge on badges.toozhao.com")
