@@ -5,10 +5,19 @@ Chinese
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
 关于代码的一切问题，如果有疑问，请与2453354394@qq.com联系，或者与zhangt725@foxmail.com联系。
 
-The latest research progress of traffic accident prediction
+The latest research progress of traffic accident prediction.
 
-# DSTA
-This is the implementation code for the paper, <a href="https://ieeexplore.ieee.org/document/9732278"> "A Dynamic Spatial-Temporal Attention Network for Early Anticipation of Traffic Accidents," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 7, pp. 9590-9600, July 2022, doi: 10.1109/TITS.2022.3155613.
+
+#DSA
+DSA, <a href="https://link.springer.com/chapter/10.1007/978-3-319-54190-7_9">. Chan, Fu-Hsiang, et al. "Anticipating accidents in dashcam videos." Computer Vision–ACCV 2016: 13th Asian Conference on Computer Vision, Taipei, Taiwan, November 20-24, 2016, Revised Selected Papers, Part IV 13. Springer International Publishing, 2017.
+
+#UString
+UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Wentao, Qi Yu, and Yu Kong. "Uncertainty-based traffic accident anticipation with spatio-temporal relational learning." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
+
+
+#DSTA
+DSTA, <a href="https://ieeexplore.ieee.org/document/9732278">. Karim, Muhammad Monjurul, et al. "A dynamic Spatial-temporal attention network for early anticipation of traffic accidents." IEEE Transactions on Intelligent Transportation Systems 23.7 (2022): 9590-9600.
+
 
 
 
