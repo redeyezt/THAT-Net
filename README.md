@@ -5,6 +5,17 @@ Chinese
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
 关于代码的一切问题，如果有疑问，请与2453354394@qq.com联系，或者与zhangt725@foxmail.com联系。
 
+The latest research progress of traffic accident prediction
+
+# DSTA
+This is the implementation code for the paper, <a href="https://ieeexplore.ieee.org/document/9732278"> "A Dynamic Spatial-Temporal Attention Network for Early Anticipation of Traffic Accidents," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 7, pp. 9590-9600, July 2022, doi: 10.1109/TITS.2022.3155613.
+
+
+
+
+
+
+
 
 我们方法的代码将在论文通过后第一时间发布。
 
