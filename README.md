@@ -9,36 +9,25 @@ Chinese
 
 # The latest research progress of traffic accident prediction.
 
-#DSA
-
 DSA, <a href="https://link.springer.com/chapter/10.1007/978-3-319-54190-7_9">. Chan, Fu-Hsiang, et al. "Anticipating accidents in dashcam videos." Computer Vision–ACCV 2016: 13th Asian Conference on Computer Vision, Taipei, Taiwan, November 20-24, 2016, Revised Selected Papers, Part IV 13. Springer International Publishing, 2017.
 
-#UString
- 
 UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Bao, Wentao, Qi Yu, and Yu Kong. "Uncertainty-based traffic accident anticipation with spatio-temporal relational learning." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
-#FA
+
  
 FA, <a href="https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mishal, Muhammad Umar Karim Khan, and Chong-Min Kyung. "Global feature aggregation for accident anticipation." 2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021.
 
-#DSTA
- 
+
 DSTA, <a href="https://ieeexplore.ieee.org/document/9732278">. Karim, Muhammad Monjurul, et al. "A dynamic Spatial-temporal attention network for early anticipation of traffic accidents." IEEE Transactions on Intelligent Transportation Systems 23.7 (2022): 9590-9600.
  
-#Leveraging spatio-temporal features to forecast time-to-accident
- 
+
 Leveraging spatio-temporal features to forecast time-to-accident, <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565532">. Taif Anjum, Beiyu Lin, and Apurva Narayan. 2022. Leveraging spatio-temporal features to forecast time-to-accident. In Proceedings of the 30th International Conference on Advances in Geographic Information Systems (SIGSPATIAL '22). Association for Computing Machinery, New York, NY, USA, Article 112, 1–2. 
  
 
- 
-#Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors
- 
 Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors, <a href="https://ieeexplore.ieee.org/abstract/document/10054736">. Mostak, Alfi Mashab, et al. "Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors." 2022 25th International Conference on Computer and Information Technology (ICCIT). IEEE, 2022.
+
+
+Anticipating in Vehicle Accident using Recurrent Neural Network, <a href="https://ieeexplore.ieee.org/abstract/document/9927516">. Riaz, W., Tahir, J., Khalid, W., Joyo, K., Ahmad, S., Azeem, A., & Laghari, M. (2022, September). Anticipating in Vehicle Accident using Recurrent Neural Network. In 2022 IEEE 5th International Conference on Information Systems and Computer Aided Education (ICISCAE) (pp. 326-330). IEEE.
  
-
-
-
-
-
 
 
 
