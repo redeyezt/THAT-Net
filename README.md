@@ -24,6 +24,12 @@ FA, <a href="https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mi
  
 DSTA, <a href="https://ieeexplore.ieee.org/document/9732278">. Karim, Muhammad Monjurul, et al. "A dynamic Spatial-temporal attention network for early anticipation of traffic accidents." IEEE Transactions on Intelligent Transportation Systems 23.7 (2022): 9590-9600.
  
+#Leveraging spatio-temporal features to forecast time-to-accident
+ 
+Leveraging spatio-temporal features to forecast time-to-accident, <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565532">. Taif Anjum, Beiyu Lin, and Apurva Narayan. 2022. Leveraging spatio-temporal features to forecast time-to-accident. In Proceedings of the 30th International Conference on Advances in Geographic Information Systems (SIGSPATIAL '22). Association for Computing Machinery, New York, NY, USA, Article 112, 1–2. 
+ 
+
+ 
 #Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors
  
 Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors, <a href="https://ieeexplore.ieee.org/abstract/document/10054736">. Mostak, Alfi Mashab, et al. "Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors." 2022 25th International Conference on Computer and Information Technology (ICCIT). IEEE, 2022.
