@@ -256,4 +256,4 @@ bash extract_vgg16_dad.sh
 [![Page Views Count](https://badges.toozhao.com/badges/01GVG6QH0S1BY8TMGHYEXF63KW/blue.svg)](https://badges.toozhao.com/stats/01GVG6QH0S1BY8TMGHYEXF63KW "Get your own page views count badge on badges.toozhao.com")
 
 
-<a href="https://clustrmaps.com/site/1btlw"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=xSlAnuTQGjlPL92PhgBCm1nPMfiQH2sVOgzFKB5Sqnw&cl=ffffff" /></a>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=xSlAnuTQGjlPL92PhgBCm1nPMfiQH2sVOgzFKB5Sqnw&cl=ffffff&w=a"></script>
