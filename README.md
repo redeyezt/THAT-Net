@@ -253,7 +253,4 @@ bash extract_vgg16_dad.sh
 
 (这一步需要更改文件路径)
 
-[![Page Views Count](https://badges.toozhao.com/badges/01GVG6QH0S1BY8TMGHYEXF63KW/blue.svg)](https://badges.toozhao.com/stats/01GVG6QH0S1BY8TMGHYEXF63KW "Get your own page views count badge on badges.toozhao.com")
-
-
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=xSlAnuTQGjlPL92PhgBCm1nPMfiQH2sVOgzFKB5Sqnw&cl=ffffff&w=a"></script>
+<img src="https://badges.toozhao.com/badges/01GVHER8T3DGMX8KA564WYRB3G/blue.svg" />
