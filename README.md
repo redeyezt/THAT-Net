@@ -4,6 +4,7 @@
 Chinese
 
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
+
 关于代码的一切问题，如果有疑问，请与2453354394@qq.com联系，或者与zhangt725@foxmail.com联系。
 
 
@@ -68,15 +69,15 @@ A3D: https://github.com/MoonBlvd/tad-IROS2019。
 提取光流需要用到flownet2网络。地址为https://github.com/NVIDIA/flownet2-pytorch
 
 （1）	创建环境
-
+```
 conda create -n flownet2 python=3.6.9
-
+```
 （2）	进入虚拟环境
-
+```
 conda activae flownet2
-
+```
 （3）	安装gcc7,g++7
-
+```
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 
 sudo apt-get update
@@ -84,8 +85,10 @@ sudo apt-get update
 sudo apt-get install gcc-7
 
 sudo apt-get install g++-7
+```
 
 （4）	将gcc7，g++7作为默认选项
+```
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
 
@@ -96,21 +99,27 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100
 sudo update-alternatives --config g++
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 50
+```
 
 （5）	查看所有gcc版本
+```
 
 ls /usr/bin/gcc*
+```
 
 （6）	查看当前gcc版本
-
+```
 gcc -v
+```
 
 （7）	安装pytorch
-
+```
 conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.1 -c pytorch
+```
 
 （8）	安装依赖包
 
+```
 pip install numpy
 
 pip install tensorboardX
@@ -128,12 +137,15 @@ pip install matplotlib
 pip install pytz
 
 pip install opencv-python
+```
 
 （9）	下载flownet代码
 
+```
 git clone https://github.com/NVIDIA/flownet2-pytorch.git
 
 cd flownet2-pytorch
+```
 
 （10）	对以下文件进行修改
 
@@ -163,11 +175,13 @@ flownet2-pytorch/networks/channelnorm_package/channelnorm.py
 
 在第9行添加
 
+```
 input1 = input1.contiguous()
+```
 
 修改后的代码如下:
 
-
+```
 class ChannelNormFunction(Function):
 
       @staticmethod
@@ -177,19 +191,25 @@ class ChannelNormFunction(Function):
           input1 = input1.contiguous() # 新添加的代码
           
           assert input1.is_contiguous()
-       
+```
           
 （14）	进入install.sh所在文件夹后输入如下命令
 
+```
 ./install.sh
+```
 
 （15）	输入以下命令进行测试
 
+```
 python main.py -h
+```
 
 （16）	添加缺失的pip包
 
+```
 pip install modules_needed
+```
 
 （17）	inference测试，下载checkpoint文件
 
@@ -197,6 +217,7 @@ https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view
 
 （18）	inference测试
 
+```
 python main.py --inference \
 
     --model FlowNet2 \
@@ -210,6 +231,7 @@ python main.py --inference \
     --inference_visualize \
     
 --resume ./pre_train/FlowNet2_checkpoint.pth.tar
+```
 
 （19）	由视频数据集得到视频帧，即.mp4->.jpg
 
@@ -219,9 +241,11 @@ Python get_mp42jpg_sh.py
 
 （20）	由视频帧图片得到光流图片，即.jpg->.flo
 
+```
 1.	python get_ jpg2flo _sh.py
 
 2.	bash jpg2flo.sh
+```
 
 (这一步需要更改文件路径)
 
@@ -231,20 +255,24 @@ Python get_mp42jpg_sh.py
 
 这一步需要使用flowiz,代码地址为: https://github.com/georgegach/flowiz
 
+```
 git clone https://github.com/georgegach/flowiz.git
 
 cd flowiz
 
 python -m flowiz demo/flo/*.flo -o demo/png -v demo/mp4 --framerate 20
+```
 
 将步骤(21)得到的flo文件全部转化为MP4文件
 
 （23）
+```
 cd VGG16 features from video
 
 python extract_vgg16_dad.py
 
 bash extract_vgg16_dad.sh
+```
 
 (这一步需要更改文件路径)
 
