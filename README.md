@@ -276,4 +276,4 @@ bash extract_vgg16_dad.sh
 
 (这一步需要更改文件路径)
 
-<img src="https://badges.toozhao.com/badges/01GVHER8T3DGMX8KA564WYRB3G/blue.svg" />
+[![Page Views Count](https://badges.toozhao.com/badges/01GVJVN3X7JXSSKJBHC63VPWHR/blue.svg)](https://badges.toozhao.com/stats/01GVJVN3X7JXSSKJBHC63VPWHR "Get your own page views count badge on badges.toozhao.com")
