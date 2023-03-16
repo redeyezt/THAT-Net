@@ -1,12 +1,14 @@
 
 #THAT-Net
 
-Chinese
 
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
 
 关于代码的一切问题，如果有疑问，请与2453354394@qq.com联系，或者与zhangt725@foxmail.com联系。
 
+This project is mainly to predict the probability of future traffic accidents in driving scenarios through vehicle surveillance video (dashboard video) (first-person video).
+
+For any questions about the code, please contact 2453354394@qq.com or zhangt725@foxmail.com.
 
 # The latest research progress of traffic accident prediction.
 
@@ -29,6 +31,26 @@ Comparative Performance Analysis of Accident Anticipation with Deep Learning Ext
 
 Anticipating in Vehicle Accident using Recurrent Neural Network, <a href="https://ieeexplore.ieee.org/abstract/document/9927516">. Riaz, W., Tahir, J., Khalid, W., Joyo, K., Ahmad, S., Azeem, A., & Laghari, M. (2022, September). Anticipating in Vehicle Accident using Recurrent Neural Network. In 2022 IEEE 5th International Conference on Information Systems and Computer Aided Education (ICISCAE) (pp. 326-330). IEEE.
  
+
+
+# A little insight on traffic accident prediction model:
+
+Traffic accident prediction model (using dashboard video to predict traffic accidents) generally has poor effect on DAD data set, but the accuracy of CCD data set can reach more than 99%. There are two main reasons for this problem:
+
+1, the DAD data set forcibly sets the accident start frame to frame 90. The traffic accident prediction problem is actually a binary classification problem. If the start frame of the accident is set as the 90th frame, the accidents that actually happened before the 90th frame will be misclassified. This error is very serious and results in dirty data.
+
+2. In DAD data set, the accuracy of vgg-16 features extracted by the creator of DAD data set is not high, resulting in a low index in traffic accident prediction, and the AP value is about 56%. To get more accurate predictions, new researchers will need to extract the features themselves, but that has been done, Please refer to the paper "Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors".
+
+Some insights on the future development of Traffic Accident Prediction Task Research:
+
+1. Follow DADA-2000 data set, EyeCar data set and CAP-DATA data set for research.
+
+2. The AP index of the current CCD data set has reached 99.5%, and it is very difficult to increase, so it is not recommended to continue the study.
+
+3. Interpretative research, which has been done by researchers, for example, "Towards explainable artificial intelligence (XAI) for early anticipation of traffic accidents" and "Anticipating in anticipation. Vehicle Accident using Recurrent Neural Network". As the development of CAM is currently limited by CNN, there is no significant innovative development in this direction.
+
+4. It is urgent to combine the large data set of radar image and RGB image, but it is difficult to complete such a large data set by an individual or by a single research laboratory.
+
 
 
 
@@ -276,4 +298,4 @@ bash extract_vgg16_dad.sh
 
 (这一步需要更改文件路径)
 
-[![Page Views Count](https://badges.toozhao.com/badges/01GVJVN3X7JXSSKJBHC63VPWHR/blue.svg)](https://badges.toozhao.com/stats/01GVJVN3X7JXSSKJBHC63VPWHR "Get your own page views count badge on badges.toozhao.com")
+<img src="https://badges.toozhao.com/badges/01GVMTG01WM6QNG2YRXHQKCDW4/blue.svg" />
