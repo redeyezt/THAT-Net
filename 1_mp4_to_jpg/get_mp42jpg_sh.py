@@ -1,7 +1,3 @@
-#School of Automation#China University of Geosciences
-#zhangtao
-#zhangt@cug.edu.cn
-
 
 from __future__ import absolute_import
 from __future__ import division

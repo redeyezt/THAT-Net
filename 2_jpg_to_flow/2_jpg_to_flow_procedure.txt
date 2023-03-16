@@ -1,0 +1,24 @@
+1
+#clone
+https://github.com/NVIDIA/flownet2-pytorch.git
+
+2
+#download
+#Converted Caffe Pre-trained Models
+https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view
+
+3
+#Place the pre-training model in the specified position
+#“For example, I put the model at checkpoint”
+/media/administrator/b11512ec-3b41-4ff9-8ab9-b048dc11432b/hongyanjin/flownet2-pytorch-master/checkpoints
+
+4
+python 2_jpg_to_flow.py
+#"2_jpg_to_flow.py____Need to modify, such as the number of GPU, number of GPU blocks, model file storage address, input file address, output file address."
+#If you are not sure, please refer to the Chinese help document
+
+5
+bash 2_jpg_to_flow.sh
+#Batch processing JPG files, batch processing flow files
+
+ 

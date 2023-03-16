@@ -1,0 +1,12 @@
+1
+clone
+https://github.com/georgegach/flowiz.git
+
+2
+conda env 
+
+3
+python flo2png2mp4.py
+
+4
+bash flo2png2mp4.sh
