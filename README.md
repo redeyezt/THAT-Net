@@ -30,6 +30,9 @@ Comparative Performance Analysis of Accident Anticipation with Deep Learning Ext
 
 
 Anticipating in Vehicle Accident using Recurrent Neural Network, <a href="https://ieeexplore.ieee.org/abstract/document/9927516">. Riaz, W., Tahir, J., Khalid, W., Joyo, K., Ahmad, S., Azeem, A., & Laghari, M. (2022, September). Anticipating in Vehicle Accident using Recurrent Neural Network. In 2022 IEEE 5th International Conference on Information Systems and Computer Aided Education (ICISCAE) (pp. 326-330). IEEE.
+
+
+GSC, <a href="https://ieeexplore.ieee.org/abstract/document/10068772">. Wang, Tianhang, et al. "GSC: A Graph and Spatio-temporal Continuity Based Framework for Accident Anticipation." IEEE Transactions on Intelligent Vehicles (2023).
  
 
 
