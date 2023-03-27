@@ -34,6 +34,9 @@ Anticipating in Vehicle Accident using Recurrent Neural Network, <a href="https:
 
 GSC, <a href="https://ieeexplore.ieee.org/abstract/document/10068772">. Wang, Tianhang, et al. "GSC: A Graph and Spatio-temporal Continuity Based Framework for Accident Anticipation." IEEE Transactions on Intelligent Vehicles (2023).
  
+ 
+ GSTL, <a href="https://ieeexplore.ieee.org/abstract/document/10077604">. F. Mahmood, D. Jeong and J. Ryu, "A New Approach to Traffic Accident Anticipation with Geometric Features for Better Generalizability," in IEEE Access, doi: 10.1109/ACCESS.2023.3259992.
+ 
 
 
 # A little insight on traffic accident prediction model:
