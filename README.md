@@ -1,5 +1,4 @@
-
-#THAT-Net
+# #THAT-Net
 
 
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
@@ -10,21 +9,21 @@ This project is mainly to predict the probability of future traffic accidents in
 
 For any questions about the code, please contact 2453354394@qq.com or zhangt725@foxmail.com.
 
-# The latest research progress of traffic accident prediction.
+## The latest research progress of traffic accident prediction:
 
 DSA, <a href="https://link.springer.com/chapter/10.1007/978-3-319-54190-7_9">. Chan, Fu-Hsiang, et al. "Anticipating accidents in dashcam videos." Computer Vision–ACCV 2016: 13th Asian Conference on Computer Vision, Taipei, Taiwan, November 20-24, 2016, Revised Selected Papers, Part IV 13. Springer International Publishing, 2017.
 
 UString, <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413827">. Bao, Wentao, Qi Yu, and Yu Kong. "Uncertainty-based traffic accident anticipation with spatio-temporal relational learning." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
 
- 
+
 FA, <a href="https://ieeexplore.ieee.org/abstract/document/9412338">. Fatima, Mishal, Muhammad Umar Karim Khan, and Chong-Min Kyung. "Global feature aggregation for accident anticipation." 2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021.
 
 
 DSTA, <a href="https://ieeexplore.ieee.org/document/9732278">. Karim, Muhammad Monjurul, et al. "A dynamic Spatial-temporal attention network for early anticipation of traffic accidents." IEEE Transactions on Intelligent Transportation Systems 23.7 (2022): 9590-9600.
- 
+
 
 Leveraging spatio-temporal features to forecast time-to-accident, <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565532">. Taif Anjum, Beiyu Lin, and Apurva Narayan. 2022. Leveraging spatio-temporal features to forecast time-to-accident. In Proceedings of the 30th International Conference on Advances in Geographic Information Systems (SIGSPATIAL '22). Association for Computing Machinery, New York, NY, USA, Article 112, 1–2. 
- 
+
 
 Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors, <a href="https://ieeexplore.ieee.org/abstract/document/10054736">. Mostak, Alfi Mashab, et al. "Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors." 2022 25th International Conference on Computer and Information Technology (ICCIT). IEEE, 2022.
 
@@ -33,49 +32,53 @@ Anticipating in Vehicle Accident using Recurrent Neural Network, <a href="https:
 
 
 GSC, <a href="https://ieeexplore.ieee.org/abstract/document/10068772">. Wang, Tianhang, et al. "GSC: A Graph and Spatio-temporal Continuity Based Framework for Accident Anticipation." IEEE Transactions on Intelligent Vehicles (2023).
- 
- 
+
+
  GSTL, <a href="https://ieeexplore.ieee.org/abstract/document/10077604">. F. Mahmood, D. Jeong and J. Ryu, "A New Approach to Traffic Accident Anticipation with Geometric Features for Better Generalizability," in IEEE Access, doi: 10.1109/ACCESS.2023.3259992.
- 
 
 
-# A little insight on traffic accident prediction model:
 
-Traffic accident prediction model (using dashboard video to predict traffic accidents) generally has poor effect on DAD data set, but the accuracy of CCD data set can reach more than 99%. There are two main reasons for this problem:
+## A little insight on traffic accident prediction model:
 
-1, the DAD data set forcibly sets the accident start frame to frame 90. The traffic accident prediction problem is actually a binary classification problem. If the start frame of the accident is set as the 90th frame, the accidents that actually happened before the 90th frame will be misclassified. This error is very serious and results in dirty data.
+#### Traffic accident prediction model (using dashboard video to predict traffic accidents) generally has poor effect on DAD data set, but the accuracy of CCD data set can reach more than 99%. There are two main reasons for this problem:
 
-2. In DAD data set, the accuracy of vgg-16 features extracted by the creator of DAD data set is not high, resulting in a low index in traffic accident prediction, and the AP value is about 56%. To get more accurate predictions, new researchers will need to extract the features themselves, but that has been done, Please refer to the paper "Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors".
+1. the DAD data set forcibly sets the accident start frame to frame 90. The traffic accident prediction problem is actually a binary classification problem. If the start frame of the accident is set as the 90th frame, the accidents that actually happened before the 90th frame will be misclassified. This error is very serious and results in dirty data.
+1. In DAD data set, the accuracy of vgg-16 features extracted by the creator of DAD data set is not high, resulting in a low index in traffic accident prediction, and the AP value is about 56%. To get more accurate predictions, new researchers will need to extract the features themselves, but that has been done, Please refer to the paper "[https://ieeexplore.ieee.org/abstract/document/10054736]( Performance Analysis of Accident Anticipation with Deep Learning Extractors) Comparative Performance Analysis of Accident Anticipation with Deep Learning Extractors".
 
-Some insights on the future development of Traffic Accident Prediction Task Research:
+#### Some insights on the future development of Traffic Accident Prediction Task Research:Why does our model work so well on the DAD dataset?
 
 1. Follow DADA-2000 data set, EyeCar data set and CAP-DATA data set for research.
-
 2. The AP index of the current CCD data set has reached 99.5%, and it is very difficult to increase, so it is not recommended to continue the study.
-
 3. Interpretative research, which has been done by researchers, for example, "Towards explainable artificial intelligence (XAI) for early anticipation of traffic accidents" and "Anticipating in anticipation. Vehicle Accident using Recurrent Neural Network". As the development of CAM is currently limited by CNN, there is no significant innovative development in this direction.
-
 4. It is urgent to combine the large data set of radar image and RGB image, but it is difficult to complete such a large data set by an individual or by a single research laboratory.
 
+#### Why does our model work so well on the DAD dataset?
+
+We have performed feature extraction on the optical flow image, as long as the features are re-extracted, the experimental effect will be better!
+
+Even if only RGB images are used, after using the pre-trained model of the VGG16 network to extract the features of the RGB images (the target coordinates remain unchanged), the format of the feature file is kept consistent with the slice format of the DAD dataset by BAO et al., and the newly generated features When the file is input to the GCRNN network or DSTA network, the effect will have a qualitative leap.
+
+Even if you use the Res-Net feature extraction network, or other feature extraction networks, as long as you don't use the features already generated by chan et al., you can get good indicators on the DAD dataset.
+
+If you don't believe this conclusion, please browse this paper. [https://ieeexplore.ieee.org/abstract/document/10054736]( Performance Analysis of Accident Anticipation with Deep Learning Extractors) 
+
+Therefore, I think that judging the quality of a traffic accident prediction network for a car camera video cannot be measured using the DAD dataset, and other datasets such as A3D datasets, CCD datasets, etc. should be used.
 
 
 
+## 我们方法的代码将在论文通过后发布。
 
-
-我们方法的代码将在论文通过后第一时间发布。
+## Our method code will be published after the paper is approved.
 
 
 
 本项目部分代码来自[UString](https://github.com/Cogito2012/UString)与[DSTA](https://github.com/redeyezt/DSTA),非常感谢这些存储库的贡献者，希望每日快乐。
 
-
-English
-
-This project is mainly to predict the probability of future traffic accidents in driving scenarios through vehicle surveillance video (dashboard video) (first-person video). For any questions about the code, please contact 2453354394@qq.com or zhangt725@foxmail.com.
-
 The code of our method will be published as soon as the paper is approved.
 
 Part of the code for this project comes from [UString](https://github.com/Cogito2012/UString) and [DSTA](https://github.com/redeyezt/DSTA). Many thanks to the contributors to these repositories. Happy daily.
+
+
 
 
 这是我们提出的THAT-Net网络，主要针对车载监控设备拍摄的视频进行交通事故预测。
@@ -177,29 +180,39 @@ cd flownet2-pytorch
 
 （10）	对以下文件进行修改
 
-networks/channelnorm_package/setup.py
+*networks/channelnorm_package/setup.py*
 
-networks/resample2d_package/setup.py
+*networks/resample2d_package/setup.py*
 
-networks/correlation_package/setup.py
+*networks/correlation_package/setup.py*
 
 将这三个文件中的{cxx_args = ['-std=c++11']}改为{cxx_args = ['-std=c++14']}
 
 （11）	对以下文件进行修改
 
-flownet2-pytorch/utils/frame_utils.py
+*flownet2-pytorch/utils/frame_utils.py*
 
 将{from scipy.misc import imread}修改为{from imageio import imread}
 
 （12）	对以下文件进行修改
 
-flownet2-pytorch/datasets.py
+*flownet2-pytorch/datasets.py*
 
-将{ from scipy.misc import imread, imresize}修改为{ from imageio import imread}
+将
+
+```
+from scipy.misc import imread, imresize
+```
+
+修改为
+
+```
+from imageio import imread
+```
 
 （13）	对以下文件进行修改
 
-flownet2-pytorch/networks/channelnorm_package/channelnorm.py
+*flownet2-pytorch/networks/channelnorm_package/channelnorm.py*
 
 在第9行添加
 
@@ -220,7 +233,7 @@ class ChannelNormFunction(Function):
           
           assert input1.is_contiguous()
 ```
-          
+
 （14）	进入install.sh所在文件夹后输入如下命令
 
 ```
@@ -263,7 +276,9 @@ python main.py --inference \
 
 （19）	由视频数据集得到视频帧，即.mp4->.jpg
 
+```
 Python get_mp42jpg_sh.py
+```
 
 (这一步需要更改文件路径)
 
@@ -304,4 +319,4 @@ bash extract_vgg16_dad.sh
 
 (这一步需要更改文件路径)
 
-<img src="https://badges.toozhao.com/badges/01GVMTG01WM6QNG2YRXHQKCDW4/blue.svg" />
+[![Page Views Count](https://badges.toozhao.com/badges/01GY95X63H78RN86E4609785B0/blue.svg)](https://badges.toozhao.com/stats/01GY95X63H78RN86E4609785B0 "Get your own page views count badge on badges.toozhao.com")
