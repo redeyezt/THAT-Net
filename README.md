@@ -66,9 +66,9 @@ Therefore, I think that judging the quality of a traffic accident prediction net
 
 
 
-## 我们方法的代码将在论文通过后发布。
+#面对就业的压力，我将不再更新，我将投入更多时间用于求职。祝愿大家前程似锦，找到好工作，在这萧瑟的世道中并肩前行。
 
-## Our method code will be published after the paper is approved.
+#任何需要帮助，或对我们的方法感兴趣的同学，请联系上面提到的邮箱。
 
 
 
