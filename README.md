@@ -3,11 +3,11 @@
 
 本项目主要是通过车载监控视频（仪表盘视频）（第一人称视频）来预测驾驶场景未来发生交通事故的概率。
 
-关于代码的一切问题，如果有疑问，请与2453354394@qq.com联系，或者与zhangt725@foxmail.com联系。
+关于代码的一切问题，如果有疑问，请与zhangt725@foxmail.com联系。(我已离开校园，参加工作，所以尽量少联系我。)
 
 This project is mainly to predict the probability of future traffic accidents in driving scenarios through vehicle surveillance video (dashboard video) (first-person video).
 
-For any questions about the code, please contact 2453354394@qq.com or zhangt725@foxmail.com.
+For any questions about the code, please contact zhangt725@foxmail.com.(I have left campus and started working, so please try not to contact me.)
 
 ## The latest research progress of traffic accident prediction:
 
